@@ -62,8 +62,7 @@ const About = () => {
             <p><strong>Learn on the ground:</strong> ask as many questions as possible and observe operations firsthand before proposing a solution.</p>
           </div>
           <p>
-            Whether it's maritime procurement or warehouse slotting, I believe you can't optimize what you haven't observed. 
-            Before reaching for a framework, I try to understand how the work actually gets done from the people doing it.
+            Across maritime procurement and warehouse operations, I believe meaningful improvement begins with direct observation. Before applying a framework, I first learn from the people closest to the work, understand how decisions are made, and identify the practical constraints that shape day-to-day performance.
           </p>
         </section>
 

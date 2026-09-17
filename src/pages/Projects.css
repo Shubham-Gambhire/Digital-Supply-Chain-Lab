@@ -93,3 +93,47 @@
 .empty-state p {
   margin-bottom: var(--space-6);
 }
+
+@media (max-width: 640px) {
+  .projects-page {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-12);
+  }
+
+  .page-header {
+    margin-bottom: var(--space-6);
+  }
+
+  .page-description {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .projects-controls {
+    align-items: stretch;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+
+  .scor-tabs {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    width: 100%;
+    border-radius: var(--radius-md);
+  }
+
+  .scor-tab {
+    min-width: 0;
+    padding: 8px 2px;
+    font-size: 0.67rem;
+    letter-spacing: 0;
+  }
+
+  .projects-search {
+    max-width: none;
+  }
+
+  .project-grid {
+    gap: var(--space-4);
+  }
+}

@@ -112,4 +112,51 @@
   .mobile-only {
     display: flex;
   }
+
+  .navbar-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-3);
+  }
+
+  .navbar-logo {
+    min-width: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .navbar-logo a {
+    display: block;
+  }
+
+  .navbar-mobile-controls {
+    flex-shrink: 0;
+    gap: var(--space-3);
+  }
+
+  .hamburger-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-menu {
+    padding: var(--space-2) 0;
+    max-height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
+  }
+
+  .mobile-nav-link {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar-logo {
+    max-width: 180px;
+    font-size: 0.92rem;
+  }
 }
