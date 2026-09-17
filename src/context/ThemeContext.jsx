@@ -4,6 +4,7 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
+    if (typeof window === 'undefined') return 'light';
     // Check localStorage first
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
