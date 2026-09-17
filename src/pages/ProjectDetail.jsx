@@ -154,6 +154,50 @@ const ProjectDetail = () => {
           </a>
         )}
       </footer>
+
+      {isOpen && (
+        <div
+          className="lightbox-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Screenshot viewer"
+          onClick={close}
+        >
+          <button type="button" className="lightbox-close" onClick={close} aria-label="Close">
+            &times;
+          </button>
+          {shots.length > 1 && (
+            <button
+              type="button"
+              className="lightbox-nav lightbox-prev"
+              aria-label="Previous screenshot"
+              onClick={(e) => { e.stopPropagation(); step(-1); }}
+            >
+              &#8249;
+            </button>
+          )}
+          <figure className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={shots[lightboxIndex].src}
+              alt={shots[lightboxIndex].alt}
+              className="lightbox-image"
+            />
+            {shots[lightboxIndex].caption && (
+              <figcaption className="lightbox-caption">{shots[lightboxIndex].caption}</figcaption>
+            )}
+          </figure>
+          {shots.length > 1 && (
+            <button
+              type="button"
+              className="lightbox-nav lightbox-next"
+              aria-label="Next screenshot"
+              onClick={(e) => { e.stopPropagation(); step(1); }}
+            >
+              &#8250;
+            </button>
+          )}
+        </div>
+      )}
     </article>
   );
 };
