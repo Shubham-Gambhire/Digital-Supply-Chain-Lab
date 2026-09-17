@@ -141,6 +141,8 @@
 
   .mobile-menu {
     padding: var(--space-2) 0;
+    max-height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
   }
 
   .mobile-nav-link {

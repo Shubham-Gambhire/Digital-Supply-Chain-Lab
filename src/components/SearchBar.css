@@ -45,3 +45,20 @@
   background-color: var(--bg-tertiary);
   color: var(--text-secondary);
 }
+
+@media (max-width: 640px) {
+  .search-icon {
+    left: var(--space-3);
+  }
+
+  .search-input {
+    min-height: 48px;
+    padding-left: 44px;
+    padding-right: 44px;
+    font-size: 1rem;
+  }
+
+  .search-clear {
+    right: var(--space-3);
+  }
+}

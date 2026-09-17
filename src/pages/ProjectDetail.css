@@ -315,11 +315,26 @@
 }
 
 @media (max-width: 640px) {
+  .lightbox-overlay {
+    padding: var(--space-12) var(--space-3) var(--space-16);
+  }
+
+  .lightbox-content {
+    width: 100%;
+    max-height: calc(100vh - 7rem);
+  }
+
   .lightbox-nav {
     position: absolute;
     bottom: var(--space-4);
   }
   .lightbox-prev { left: var(--space-4); }
   .lightbox-next { right: var(--space-4); }
-  .lightbox-image { max-height: 70vh; }
+  .lightbox-image { max-height: calc(100vh - 11rem); }
+
+  .lightbox-caption {
+    max-height: 3rem;
+    overflow-y: auto;
+    font-size: 0.8rem;
+  }
 }

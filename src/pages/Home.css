@@ -199,8 +199,14 @@
 
   .stats-inner {
     display: grid;
-    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr !important;
     gap: var(--space-3);
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 2.5rem;
+    align-self: center;
   }
 
   .stat-number {
