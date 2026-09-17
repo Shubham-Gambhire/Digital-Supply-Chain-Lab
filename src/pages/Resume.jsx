@@ -27,14 +27,38 @@ const Resume = () => {
 
           <div className="resume-item">
             <div className="resume-item-header">
+              <h3>Kearney Tarion</h3>
+              <span className="resume-date font-mono">Aug 2026 to Sep 2026</span>
+            </div>
+            <ul className="resume-bullets">
+              <li>Live Project: Prototype building for AI trade strategy copilot named Tarion.</li>
+              <li>Evaluated trade rules, country exposure, and risk factors across an international product portfolio.</li>
+              <li>Structured and validated a savings analysis to support sourcing and trade-related decision making.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
               <h3>Tata Consultancy Services (TCS)</h3>
-              <span className="resume-date font-mono">April 2026</span>
+              <span className="resume-date font-mono">April 2026 to May 2026</span>
             </div>
             <div className="resume-role">Summer Intern: Digital Supply Chain & Procurement</div>
             <ul className="resume-bullets">
               <li>Mapped the end-to-end Procure-to-Pay (P2P) lifecycle for a Fortune 500 US hospitality cruise client during a global transition to Oracle Fusion SCM, identifying system friction points and designing data-driven enhancements.</li>
               <li>Designed a Multivariate Regression model isolating passenger and voyage variables to capture 70% of demand variance for optimised replenishment across the fleet.</li>
               <li>Proposed an (s, S) inventory policy to stabilise dynamic reorder thresholds, validating safety stock levels through 10,000 Monte Carlo simulations.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <h3>Government Warehouse Optimization</h3>
+              <span className="resume-date font-mono">Feb 2026 to Apr 2026</span>
+            </div>
+            <ul className="resume-bullets">
+              <li>Live Project: Warehouse Operations evaluation and optimization.</li>
+              <li>Classified movement patterns across 518 SKUs to support more targeted warehouse inventory decisions.</li>
+              <li>Analysed demand timing and same-day picking performance to identify operational improvement opportunities.</li>
             </ul>
           </div>
 
