@@ -52,3 +52,35 @@
   font-size: 0.75rem;
   color: var(--text-tertiary);
 }
+
+@media (max-width: 640px) {
+  .project-card {
+    padding: var(--space-5, 20px);
+    border-radius: var(--radius-md);
+  }
+
+  .project-card-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-3);
+  }
+
+  .project-card-title {
+    min-width: 0;
+    font-size: 1.05rem;
+  }
+
+  .project-card-tagline {
+    margin-bottom: var(--space-4);
+    font-size: 0.93rem;
+  }
+
+  .project-card-footer {
+    min-width: 0;
+  }
+
+  .project-card-tech {
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+}

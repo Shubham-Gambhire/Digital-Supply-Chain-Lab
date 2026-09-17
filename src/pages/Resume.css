@@ -83,3 +83,51 @@
   font-size: 1.1rem;
   margin-bottom: var(--space-4);
 }
+
+@media (max-width: 640px) {
+  .resume-page {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-12);
+  }
+
+  .resume-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: var(--space-10, 40px);
+  }
+
+  .resume-content {
+    gap: var(--space-10, 40px);
+  }
+
+  .resume-section h2 {
+    margin-bottom: var(--space-5, 20px);
+  }
+
+  .resume-item {
+    margin-bottom: var(--space-8);
+  }
+
+  .resume-item-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+
+  .resume-date {
+    font-size: 0.82rem;
+  }
+
+  .resume-role {
+    font-size: 0.98rem;
+  }
+
+  .resume-bullets {
+    padding-left: var(--space-5, 20px);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}

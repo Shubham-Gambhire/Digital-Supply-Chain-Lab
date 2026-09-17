@@ -172,14 +172,47 @@
 }
 
 @media (max-width: 640px) {
+  .project-detail {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-12);
+  }
+
+  .back-nav {
+    margin-bottom: var(--space-6);
+  }
+
+  .project-hero,
+  .project-section {
+    margin-bottom: var(--space-8);
+  }
+
+  .project-title {
+    font-size: 1.85rem;
+    overflow-wrap: anywhere;
+  }
+
+  .project-tagline {
+    font-size: 1.05rem;
+  }
+
+  .decision-block {
+    padding: var(--space-5, 20px);
+    border-radius: var(--radius-md);
+  }
+
   .prototype-gallery {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 
   .prototype-header {
     align-items: flex-start;
     flex-direction: column;
     gap: var(--space-4);
+  }
+
+  .project-footer {
+    margin-top: var(--space-12);
   }
 }
 

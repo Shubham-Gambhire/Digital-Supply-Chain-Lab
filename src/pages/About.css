@@ -31,3 +31,32 @@
   color: var(--text-primary);
   font-size: 1.15rem;
 }
+
+@media (max-width: 640px) {
+  .about-page {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-12);
+  }
+
+  .about-content {
+    gap: var(--space-10, 40px);
+  }
+
+  .about-section h2 {
+    margin-bottom: var(--space-4);
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .philosophy-highlight {
+    padding: var(--space-5, 20px);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-5, 20px);
+  }
+
+  .philosophy-highlight p {
+    font-size: 1.05rem;
+  }
+}

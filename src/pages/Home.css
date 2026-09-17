@@ -162,3 +162,75 @@
   border-radius: var(--radius-md);
   border-bottom-color: transparent;
 }
+
+@media (max-width: 640px) {
+  .home-page {
+    padding-bottom: var(--space-12);
+  }
+
+  .hero {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-8);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-bottom: var(--space-4);
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-ctas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .stats-bar {
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-12);
+    padding: var(--space-5, 20px) 0;
+  }
+
+  .stats-inner {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: var(--space-3);
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.68rem;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .stat-item::after,
+  .stat-item::before {
+    display: none;
+  }
+
+  .featured-projects {
+    margin-bottom: var(--space-12);
+  }
+
+  .project-grid {
+    gap: var(--space-4);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .view-all-link {
+    justify-content: flex-start;
+  }
+}
