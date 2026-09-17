@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { projects } from '../data/projects';
 import ScorTag from '../components/ScorTag';
@@ -8,6 +8,30 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find(p => p.id === id);
+  const shots = project?.prototype?.screenshots || [];
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+  const isOpen = lightboxIndex !== null;
+
+  const close = useCallback(() => setLightboxIndex(null), []);
+  const step = useCallback((delta) => {
+    setLightboxIndex((i) => (i === null ? i : (i + delta + shots.length) % shots.length));
+  }, [shots.length]);
+
+  useEffect(() => {
+    if (!isOpen) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowRight') step(1);
+      if (e.key === 'ArrowLeft') step(-1);
+    };
+    window.addEventListener('keydown', onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [isOpen, close, step]);
 
   if (!project) {
     return (

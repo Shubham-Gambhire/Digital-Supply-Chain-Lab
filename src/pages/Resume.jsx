@@ -125,7 +125,7 @@ const Resume = () => {
 
           <ul className="resume-bullets">
             <li>Six Sigma Green Belt: Advanced Innovation Group Pro Excellence</li>
-            <li>Generative AI for Supply Chain: CSCMP via LinkedIn Learning</li>
+            <li>Atlassian Agile Project Management Professional Certificate</li>
             <li>Data Analyst's Toolbox: Excel, SQL, Python, Power BI, Tableau: Udemy</li>
           </ul>
         </section>
