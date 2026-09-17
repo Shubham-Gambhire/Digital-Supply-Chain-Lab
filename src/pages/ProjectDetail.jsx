@@ -95,16 +95,24 @@ const ProjectDetail = () => {
           )}
         </div>
         
-        {project.prototype?.screenshots?.length > 0 ? (
+        {shots.length > 0 ? (
           <div className="prototype-gallery">
-            {project.prototype.screenshots.map((screenshot) => (
+            {shots.map((screenshot, idx) => (
               <figure key={screenshot.src} className="prototype-figure">
-                <img
-                  src={screenshot.src}
-                  alt={screenshot.alt}
-                  className="prototype-image"
-                  loading="lazy"
-                />
+                <button
+                  type="button"
+                  className="prototype-image-button"
+                  onClick={() => setLightboxIndex(idx)}
+                  aria-label={`Enlarge screenshot: ${screenshot.alt || screenshot.caption || ''}`}
+                >
+                  <img
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    className="prototype-image"
+                    loading="lazy"
+                  />
+                  <span className="prototype-zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
                 <figcaption>{screenshot.caption}</figcaption>
               </figure>
             ))}
