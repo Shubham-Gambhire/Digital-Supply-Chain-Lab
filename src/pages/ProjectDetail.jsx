@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { projects } from '../data/projects';
 import ScorTag from '../components/ScorTag';
@@ -8,6 +8,30 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find(p => p.id === id);
+  const shots = project?.prototype?.screenshots || [];
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+  const isOpen = lightboxIndex !== null;
+
+  const close = useCallback(() => setLightboxIndex(null), []);
+  const step = useCallback((delta) => {
+    setLightboxIndex((i) => (i === null ? i : (i + delta + shots.length) % shots.length));
+  }, [shots.length]);
+
+  useEffect(() => {
+    if (!isOpen) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowRight') step(1);
+      if (e.key === 'ArrowLeft') step(-1);
+    };
+    window.addEventListener('keydown', onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [isOpen, close, step]);
 
   if (!project) {
     return (
@@ -71,16 +95,24 @@ const ProjectDetail = () => {
           )}
         </div>
         
-        {project.prototype?.screenshots?.length > 0 ? (
+        {shots.length > 0 ? (
           <div className="prototype-gallery">
-            {project.prototype.screenshots.map((screenshot) => (
+            {shots.map((screenshot, idx) => (
               <figure key={screenshot.src} className="prototype-figure">
-                <img
-                  src={screenshot.src}
-                  alt={screenshot.alt}
-                  className="prototype-image"
-                  loading="lazy"
-                />
+                <button
+                  type="button"
+                  className="prototype-image-button"
+                  onClick={() => setLightboxIndex(idx)}
+                  aria-label={`Enlarge screenshot: ${screenshot.alt || screenshot.caption || ''}`}
+                >
+                  <img
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    className="prototype-image"
+                    loading="lazy"
+                  />
+                  <span className="prototype-zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
                 <figcaption>{screenshot.caption}</figcaption>
               </figure>
             ))}
@@ -122,6 +154,50 @@ const ProjectDetail = () => {
           </a>
         )}
       </footer>
+
+      {isOpen && (
+        <div
+          className="lightbox-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Screenshot viewer"
+          onClick={close}
+        >
+          <button type="button" className="lightbox-close" onClick={close} aria-label="Close">
+            &times;
+          </button>
+          {shots.length > 1 && (
+            <button
+              type="button"
+              className="lightbox-nav lightbox-prev"
+              aria-label="Previous screenshot"
+              onClick={(e) => { e.stopPropagation(); step(-1); }}
+            >
+              &#8249;
+            </button>
+          )}
+          <figure className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={shots[lightboxIndex].src}
+              alt={shots[lightboxIndex].alt}
+              className="lightbox-image"
+            />
+            {shots[lightboxIndex].caption && (
+              <figcaption className="lightbox-caption">{shots[lightboxIndex].caption}</figcaption>
+            )}
+          </figure>
+          {shots.length > 1 && (
+            <button
+              type="button"
+              className="lightbox-nav lightbox-next"
+              aria-label="Next screenshot"
+              onClick={(e) => { e.stopPropagation(); step(1); }}
+            >
+              &#8250;
+            </button>
+          )}
+        </div>
+      )}
     </article>
   );
 };

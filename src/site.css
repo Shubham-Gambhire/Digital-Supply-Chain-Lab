@@ -197,3 +197,74 @@ button {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Hide third-party badges globally */
+#lovable-badge,
+#Made-With-Replit,
+#made-with-replit,
+#replit-badge,
+#Replit-badge,
+[id='lovable-badge'],
+[id='Made-With-Replit'],
+[id='Replit-badge'] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Responsive: phone, tablet, desktop */
+img, svg, video, canvas, iframe {
+  max-width: 100%;
+}
+
+pre, table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .container-grid,
+  .container-prose {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.6rem; }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  html, body {
+    font-size: 15px;
+  }
+
+  .container-grid,
+  .container-prose {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+  h3 { font-size: 1.1rem; }
+
+  .button-primary,
+  .button-secondary {
+    padding: var(--space-3) var(--space-4);
+    width: 100%;
+  }
+
+  .project-footer,
+  .resume-actions,
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  [class$='-grid'],
+  .projects-grid,
+  .featured-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
