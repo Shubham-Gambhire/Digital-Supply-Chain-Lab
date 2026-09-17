@@ -16,8 +16,8 @@ const About = () => {
     },
     {
       period: "Live Project",
-      title: "Government Warehouse Optimization",
-      description: "Analysed 518 SKUs for a government-operated warehouse, classified movement patterns, identified the 8:00 to 11:30 AM demand peak, and investigated why 30% of same-day cases remained unpicked."
+      title: "Kearney Tarion",
+      description: "A live project focused on evaluating trade rules, risk, and savings opportunities across an international product portfolio."
     },
     {
       period: "Internship",
@@ -26,8 +26,8 @@ const About = () => {
     },
     {
       period: "Live Project",
-      title: "Kearney Tarion",
-      description: "Built a trade and sourcing analysis across 30 products, 4 countries, 13 trade rules, and 6 risk factors. Quantified $9.85M in annual savings across 27 products and validated the model with 505 automated tests plus 14 hand-computed cases."
+      title: "Government Warehouse Optimization",
+      description: "A live project focused on improving inventory movement and fulfilment in a government-operated warehouse."
     },
     {
       period: "Education",
