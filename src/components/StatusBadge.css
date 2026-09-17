@@ -1,0 +1,40 @@
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.status-idea {
+  background-color: var(--status-idea-bg);
+  color: var(--status-idea-text);
+}
+
+.status-research {
+  background-color: var(--status-research-bg);
+  color: var(--status-research-text);
+}
+
+.status-prototype {
+  background-color: var(--status-prototype-bg);
+  color: var(--status-prototype-text);
+}
+
+.status-testing {
+  background-color: var(--status-testing-bg);
+  color: var(--status-testing-text);
+}
+
+.status-completed {
+  background-color: var(--status-completed-bg);
+  color: var(--status-completed-text);
+}
+
+.status-published {
+  background-color: var(--status-published-bg);
+  color: var(--status-published-text);
+}

@@ -1,0 +1,164 @@
+.home-page {
+  padding-bottom: var(--space-16);
+}
+
+.hero {
+  padding: var(--space-16) var(--space-4) var(--space-12);
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: var(--space-6);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0 auto var(--space-8);
+  line-height: 1.6;
+}
+
+.hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.stats-bar {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-6) 0;
+  margin-top: 4.5rem;
+  margin-bottom: var(--space-16);
+}
+
+.stats-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.stat-number {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+}
+
+.stat-divider {
+  width: 1px;
+  height: 2rem;
+  background-color: var(--border);
+}
+
+/* Stat tooltips */
+.stat-item {
+  position: relative;
+  cursor: default;
+}
+
+.stat-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm, 4px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--text-primary);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.stat-item:hover::after,
+.stat-item:hover::before {
+  opacity: 1;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.quick-stat {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+}
+
+.featured-projects {
+  margin-bottom: var(--space-16);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.view-all-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-4);
+}
+
+.view-all-link a {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.latest-blog-card-wrapper {
+  display: block;
+}
+
+.latest-blog-card-wrapper:hover .blog-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border-bottom-color: transparent;
+}

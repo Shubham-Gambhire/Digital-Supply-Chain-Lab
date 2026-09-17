@@ -1,0 +1,85 @@
+.resume-page {
+  padding: var(--space-8) var(--space-4) var(--space-16);
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.download-btn {
+  gap: var(--space-2);
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.resume-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.resume-item {
+  margin-bottom: var(--space-8);
+}
+
+.resume-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.resume-item-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.resume-date {
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+}
+
+.resume-role {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: var(--space-3);
+}
+
+.resume-bullets {
+  margin: 0;
+  padding-left: var(--space-6);
+}
+
+.resume-bullets li {
+  margin-bottom: var(--space-2);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-8);
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-4);
+}
