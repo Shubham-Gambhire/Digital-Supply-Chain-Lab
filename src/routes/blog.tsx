@@ -3,13 +3,13 @@ import { createFileRoute, Outlet } from "@tanstack/react-router";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Blog — Digital Supply Chain Lab" },
+      { title: "Blog | Digital Supply Chain Lab" },
       {
         name: "description",
         content:
           "Notes and reflections on building digital supply chain tools: learn, build, reflect, share.",
       },
-      { property: "og:title", content: "Blog — Digital Supply Chain Lab" },
+      { property: "og:title", content: "Blog | Digital Supply Chain Lab" },
       {
         property: "og:description",
         content:

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/blog/$id")({
     return post;
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.title} — Digital Supply Chain Lab` : "Article not found — Digital Supply Chain Lab";
+    const title = loaderData ? `${loaderData.title} | Digital Supply Chain Lab` : "Article not found | Digital Supply Chain Lab";
     const description = loaderData?.excerpt ?? "Supply chain article from Digital Supply Chain Lab.";
     return {
       meta: [
