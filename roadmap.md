@@ -13,4 +13,4 @@
 - [x] Stabilize fonts by bundling them with the site
 - [x] Diagnose custom domain availability
 - [x] Replace placeholder blog posts with the five authored articles and publication dates
-- [ ] Give each blog article its own page and show only the newest article on the homepage
+- [x] Give each blog article its own page and show only the newest article on the homepage
