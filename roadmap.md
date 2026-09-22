@@ -9,3 +9,6 @@
 - [x] Write a professional repository README
 - [x] Improve phone layout across the site
 - [x] Rewrite the About-page operations philosophy statement
+- [x] Add DSCL logo and browser icon
+- [x] Stabilize fonts by bundling them with the site
+- [x] Diagnose custom domain availability

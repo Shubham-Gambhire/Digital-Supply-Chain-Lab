@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
+import dsclLogo from '../../assets/dscl-logo-160.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -26,7 +27,10 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar-container container-grid">
         <div className="navbar-logo">
-          <NavLink to="/" onClick={closeMobileMenu}>Digital Supply Chain Lab</NavLink>
+          <NavLink to="/" onClick={closeMobileMenu} className="navbar-brand">
+            <img src={dsclLogo} alt="DSCL" width="40" height="40" />
+            <span>Digital Supply Chain Lab</span>
+          </NavLink>
         </div>
 
         <nav className="navbar-links desktop-only">
