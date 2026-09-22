@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import Resume from "@/pages/Resume.jsx";
 
 export const Route = createFileRoute("/resume")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Resume | Shubham Gambhire" },
@@ -18,7 +19,9 @@ export const Route = createFileRoute("/resume")({
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://digitalsupplychainlab.com/resume" },
     ],
+    links: [{ rel: "canonical", href: "https://digitalsupplychainlab.com/resume" }],
   }),
   component: Resume,
 });

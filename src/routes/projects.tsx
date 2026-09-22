@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import Projects from "@/pages/Projects.jsx";
 
 export const Route = createFileRoute("/projects")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Projects | Digital Supply Chain Lab" },
@@ -18,7 +19,9 @@ export const Route = createFileRoute("/projects")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://digitalsupplychainlab.com/projects" },
     ],
+    links: [{ rel: "canonical", href: "https://digitalsupplychainlab.com/projects" }],
   }),
   component: Projects,
 });

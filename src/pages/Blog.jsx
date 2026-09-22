@@ -43,7 +43,7 @@ const Blog = () => {
           ))
         ) : (
           <div className="empty-state">
-            <h3>No posts found</h3>
+            <h2>No posts found</h2>
             <p>Try a different search term.</p>
           </div>
         )}
