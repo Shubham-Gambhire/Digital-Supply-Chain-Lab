@@ -10,7 +10,9 @@ const SCOR_FUNCTIONS = ['PLAN', 'SOURCE', 'MAKE', 'DELIVER'];
 
 const Home = () => {
   const featuredProjects = projects.filter(p => p.featured).slice(0, 3);
-  const latestPost = blogPosts[0];
+  const latestPost = [...blogPosts].sort(
+    (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
+  )[0];
 
   return (
     <div className="home-page">
@@ -63,7 +65,7 @@ const Home = () => {
       {latestPost && (
         <section className="latest-blog container-prose">
           <h2 className="section-title">Latest from the Blog</h2>
-          <Link to={`/blog`} className="latest-blog-card-wrapper">
+          <Link to={`/blog/${latestPost.id}`} className="latest-blog-card-wrapper">
             <BlogCard post={latestPost} />
           </Link>
           <div className="view-all-link">
