@@ -7,8 +7,41 @@ import './Blog.css';
 const Blog = () => {
   const { searchTerm, setSearchTerm, filteredItems } = useSearch(
     blogPosts, 
-    ['title', 'excerpt', 'tags', 'content']
+    ['title', 'tags', 'searchText']
   );
+
+  const renderBlock = (block, index) => {
+    if (block.type === 'heading') {
+      return <h3 key={index} className="blog-content-heading">{block.text}</h3>;
+    }
+
+    if (block.type === 'list') {
+      return (
+        <ul key={index} className="blog-content-list">
+          {block.items.map(item => <li key={item}>{item}</li>)}
+        </ul>
+      );
+    }
+
+    if (block.type === 'emphasis') {
+      return <p key={index} className="blog-content-emphasis">{block.text}</p>;
+    }
+
+    if (block.type === 'quote') {
+      return <p key={index} className="blog-content-quote">{block.text}</p>;
+    }
+
+    if (block.type === 'closing') {
+      return <p key={index} className="blog-content-closing">{block.text}</p>;
+    }
+
+    return (
+      <p key={index}>
+        {block.label && <strong>{block.label} </strong>}
+        {block.text}
+      </p>
+    );
+  };
 
   return (
     <div className="blog-page container-prose">
@@ -43,9 +76,7 @@ const Blog = () => {
                 </div>
               </header>
               <div className="blog-post-content">
-                {post.content.split('\n\n').map((paragraph, idx) => (
-                  <p key={idx}>{paragraph}</p>
-                ))}
+                {post.content.map(renderBlock)}
               </div>
             </article>
           ))
