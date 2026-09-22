@@ -88,6 +88,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "A public lab notebook for digital supply chains: prototypes, decisions, and lessons at the intersection of supply chain strategy and technology.",
       },
       { name: "author", content: "Shubham Gambhire" },
+      {
+        name: "google-site-verification",
+        content: "yo4Y5x9rv_xSYsYld5THWYA0YtAWXcu31yiaXgF8s8k",
+      },
       { property: "og:title", content: "Digital Supply Chain Lab | Shubham Gambhire" },
       {
         property: "og:description",
