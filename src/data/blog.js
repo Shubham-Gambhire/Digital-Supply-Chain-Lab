@@ -3,6 +3,8 @@ export const blogPosts = [
     id: "shell-scenario-planning-supply-chains",
     title: "How Shell's 1965 Scenario Planning Still Shapes Supply Chains Today",
     date: "14 July 2026",
+    publishedAt: "2026-07-14",
+    excerpt: "How scenario planning helped Shell prepare for disruption—and why the same approach still shapes resilient supply chains today.",
     tags: ["Scenario Planning", "Strategy"],
     content: [
       { type: "paragraph", text: "Earlier in 1965, Jimmy Davidson, head of economics and planning in Shell's exploration and production division, brought in Ted Newland and Pierre Wack for Long Range Studies. That decision quietly changed how planning was done at Shell. It moved the company from traditional forecasting to scenario planning." },
@@ -31,6 +33,8 @@ export const blogPosts = [
     id: "supply-chain-resilience",
     title: "What do we mean by resilience in supply chain?",
     date: "29 July 2026",
+    publishedAt: "2026-07-29",
+    excerpt: "A practical look at redundancy, responsiveness, and flexibility through Yossi Sheffi's framework for resilient enterprises.",
     tags: ["Resilience", "Risk Management"],
     content: [
       { type: "paragraph", text: "I recently studied A Supply Chain View of the Resilient Enterprise by Yossi Sheffi, a well-known author in this field. One line that stayed with me is: when everything is urgent, nothing is urgent. Sheffi's vulnerability map and framework help cut through that noise. They give a clear way to categorise which situations and scenarios deserve the most attention, and how to keep updating those maps as conditions change. That alone makes prioritisation more disciplined." },
@@ -54,6 +58,8 @@ export const blogPosts = [
     id: "triple-a-supply-chain",
     title: "Is an efficient supply chain not worth it? A Triple-A supply chain deep dive",
     date: "18 August 2026",
+    publishedAt: "2026-08-18",
+    excerpt: "Why efficiency alone is not enough, and how agility, adaptability, and alignment create stronger supply chains.",
     tags: ["Triple-A", "Efficiency"],
     content: [
       { type: "paragraph", text: "I recently read Hau Lee's article on the Triple-A Supply Chain. It left me with a slightly uncomfortable question. For years most of us have been taught that an efficient supply chain is the goal. Lower costs, tighter inventories, faster turns. But Lee's piece makes you wonder whether pure efficiency is actually enough, or whether it can quietly become a trap." },
@@ -70,6 +76,8 @@ export const blogPosts = [
     id: "product-lifecycle-supply-chain",
     title: "Why the lifecycle stage of your product matters most for your supply chain",
     date: "5 September 2026",
+    publishedAt: "2026-09-05",
+    excerpt: "How product lifecycle stages should guide inventory, capacity, supplier, and fulfilment decisions.",
     tags: ["Product Lifecycle", "Inventory"],
     content: [
       { type: "paragraph", text: "Whether you face stockouts or overstocking, whether price promotions become necessary, or how well supply chain partners coordinate, depends far more on the stage your product is in than on the technology you use." },
@@ -87,6 +95,8 @@ export const blogPosts = [
     id: "ai-supply-chain-planners",
     title: "I expected to find stories about AI replacing supply chain planners. Instead, I found something much more interesting.",
     date: "21 September 2026",
+    publishedAt: "2026-09-21",
+    excerpt: "Where AI is creating practical value for supply chain planners—and why better data still matters more than bigger promises.",
     tags: ["Artificial Intelligence", "Planning"],
     content: [
       { type: "paragraph", text: "Over the past few days, I went through dozens of discussions from supply chain professionals across different industries to understand where AI is actually creating value. The more I read, the clearer one pattern became." },

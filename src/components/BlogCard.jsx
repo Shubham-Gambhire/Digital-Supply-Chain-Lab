@@ -5,7 +5,7 @@ const BlogCard = ({ post }) => {
   return (
     <div className="blog-card">
       <div className="blog-card-meta">
-        <span className="blog-card-date font-mono">{post.date}</span>
+        <time className="blog-card-date font-mono" dateTime={post.publishedAt}>{post.date}</time>
       </div>
       <h3 className="blog-card-title">{post.title}</h3>
       <p className="blog-card-excerpt">{post.excerpt}</p>

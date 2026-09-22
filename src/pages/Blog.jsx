@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blog';
 import { useSearch } from '../hooks/useSearch';
 import SearchBar from '../components/SearchBar';
+import BlogCard from '../components/BlogCard';
 import './Blog.css';
 
 const Blog = () => {
@@ -10,38 +12,9 @@ const Blog = () => {
     ['title', 'tags', 'searchText']
   );
 
-  const renderBlock = (block, index) => {
-    if (block.type === 'heading') {
-      return <h3 key={index} className="blog-content-heading">{block.text}</h3>;
-    }
-
-    if (block.type === 'list') {
-      return (
-        <ul key={index} className="blog-content-list">
-          {block.items.map(item => <li key={item}>{item}</li>)}
-        </ul>
-      );
-    }
-
-    if (block.type === 'emphasis') {
-      return <p key={index} className="blog-content-emphasis">{block.text}</p>;
-    }
-
-    if (block.type === 'quote') {
-      return <p key={index} className="blog-content-quote">{block.text}</p>;
-    }
-
-    if (block.type === 'closing') {
-      return <p key={index} className="blog-content-closing">{block.text}</p>;
-    }
-
-    return (
-      <p key={index}>
-        {block.label && <strong>{block.label} </strong>}
-        {block.text}
-      </p>
-    );
-  };
+  const newestFirst = [...filteredItems].sort(
+    (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
+  );
 
   return (
     <div className="blog-page container-prose">
@@ -62,23 +35,11 @@ const Blog = () => {
 
       <div className="blog-feed">
         {filteredItems.length > 0 ? (
-          filteredItems.map(post => (
-            <article key={post.id} className="blog-post">
-              <header className="blog-post-header">
-                <span className="blog-post-date font-mono">{post.date}</span>
-                <h2 className="blog-post-title">{post.title}</h2>
-                <div className="blog-post-tags">
-                  {post.tags.map(tag => (
-                    <span key={tag} className="blog-tag">
-                      #{tag.toLowerCase().replace(/\s+/g, '-')}
-                    </span>
-                  ))}
-                </div>
-              </header>
-              <div className="blog-post-content">
-                {post.content.map(renderBlock)}
-              </div>
-            </article>
+          newestFirst.map(post => (
+            <Link key={post.id} to={`/blog/${post.id}`} className="blog-index-link">
+              <BlogCard post={post} />
+              <span className="blog-read-more">Read article →</span>
+            </Link>
           ))
         ) : (
           <div className="empty-state">
