@@ -53,4 +53,38 @@
   margin-bottom: var(--space-4);
 }
 
+.blog-content-heading {
+  margin: var(--space-6) 0 var(--space-2);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.blog-content-list {
+  margin: 0 0 var(--space-6);
+  padding-left: var(--space-6);
+}
+
+.blog-content-list li {
+  margin-bottom: var(--space-2);
+}
+
+.blog-content-emphasis {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.blog-content-quote {
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--accent);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.blog-content-closing {
+  margin-top: var(--space-8);
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
 

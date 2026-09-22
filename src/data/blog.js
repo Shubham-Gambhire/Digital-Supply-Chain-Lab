@@ -1,36 +1,115 @@
 export const blogPosts = [
   {
-    id: "the-myth-of-perfect-forecasts",
-    title: "The Myth of Perfect Forecasts",
-    date: "2026-07-22",
-    excerpt: "Why chasing 100% forecast accuracy is a waste of time, and what to focus on instead.",
-    tags: ["Demand Planning", "Strategy"],
-    content: `
-I've been thinking a lot recently about how much time companies spend trying to perfect their demand forecasts. We throw more data, more complex machine learning algorithms, and more computing power at the problem, hoping to finally nail down exactly what customers will buy next month.
-
-But the reality is, forecasts are always wrong.
-
-Instead of chasing perfect accuracy, I've realized it's much more effective to focus on agility and responsiveness. How quickly can your supply chain react when the forecast inevitably deviates from reality?
-
-* Build buffers strategically.
-* Shorten lead times wherever possible.
-* Cultivate flexible supplier relationships.
-
-The goal shouldn't be to predict the future perfectly; it should be to build a system robust enough to handle the unpredictable.
-    `
+    id: "shell-scenario-planning-supply-chains",
+    title: "How Shell's 1965 Scenario Planning Still Shapes Supply Chains Today",
+    date: "14 July 2026",
+    tags: ["Scenario Planning", "Strategy"],
+    content: [
+      { type: "paragraph", text: "Earlier in 1965, Jimmy Davidson, head of economics and planning in Shell's exploration and production division, brought in Ted Newland and Pierre Wack for Long Range Studies. That decision quietly changed how planning was done at Shell. It moved the company from traditional forecasting to scenario planning." },
+      { type: "paragraph", text: "With Newland and Wack's work, Shell was able to anticipate the 1973 oil shock and position itself well. They invested heavily in converting heavy oil into light oil, which at the time was mainly used for heating and could be replaced by coal or gas. Jan Choufoer, who coordinated Shell's refinery activities, pushed for developing an industrial process called “cracking” so they could convert heavy fuels into light fuels at scale. The key was not just seeing the possible futures, but preparing concrete options and aligning the wider system around them." },
+      { type: "paragraph", text: "That same pattern shows up today. Whether it is the shift from petrol to EVs or from dining out to online ordering, companies that think in scenarios and then act across the supply chain still pull ahead." },
+      { type: "paragraph", text: "Tata Motors is a clear example. They launched their first commercial electric vehicle, the Tigor EV, in June 2019 after earlier prototypes and a government tender won in 2017. But the real work had started earlier with scenario thinking." },
+      { type: "heading", text: "Scenario 1: Limited EV adoption in India because of range anxiety." },
+      { type: "paragraph", label: "Plan:", text: "They avoided building an expensive dedicated EV platform at the start. Instead they engineered their existing ICE platforms for the Tigor and Nexon." },
+      { type: "heading", text: "Scenario 2: Government and institutional buyers would purchase EVs because range was less of a concern for them." },
+      { type: "paragraph", label: "Plan:", text: "They targeted institutional customers first and secured the early EESL tender for 10,000 electric cars." },
+      { type: "heading", text: "Scenario 3: Oil price volatility would push the government to offer stronger EV incentives." },
+      { type: "paragraph", label: "Plan:", text: "They built the “One Tata” ecosystem. Tata Power for charging infrastructure, Tata AutoComp for localisation, and later Agratas for local cell manufacturing." },
+      { type: "paragraph", text: "All three plans required forward thinking and close alignment across the group. That approach helped Tata reach around 43% EV market share and secure an early-mover position." },
+      { type: "paragraph", text: "Domino's followed a similar logic. They had already launched online ordering in India in 2012, but in 2022 they upgraded their digital and logistics systems to support a 20-minute delivery promise, anticipating the post-COVID rise of food delivery platforms." },
+      { type: "heading", text: "Scenario 1: Customer behaviour would shift further from physical stores to online orders." },
+      { type: "paragraph", label: "Plan:", text: "They redesigned stores into “Pizza Theater” layouts that clearly separate delivery drivers from walk-in customers." },
+      { type: "heading", text: "Scenario 2: Online orders would create much higher sales volume in certain areas." },
+      { type: "paragraph", label: "Plan:", text: "They used a “fortressing” approach, mapping delivery territories so that when a store became highly profitable they could split the area and open a second nearby outlet." },
+      { type: "heading", text: "Scenario 3: Drivers might prefer the flexible hours offered by third-party delivery apps." },
+      { type: "paragraph", label: "Plan:", text: "They modelled regional driver retention. If local apps started offering heavy incentives, Domino's could decide how much to raise internal pay or performance bonuses to keep their fleet stable." },
+      { type: "paragraph", text: "By treating the stores, the driver network and the planning process as one connected system, Domino's ended up with one of the top downloaded food delivery apps in India and stronger profits compared with McDonald's and Pizza Hut in the same market." },
+      { type: "paragraph", text: "What Shell began in 1965 still holds. The pace is faster now and the specific situations are different, but the core remains the same. Companies that use scenario planning to build adaptability, keep stakeholders aligned, and stay ready to execute are the ones that pull away from the rest." },
+    ],
   },
   {
-    id: "learning-from-warehouse-ops",
-    title: "Learning from Warehouse Ops",
-    date: "2026-07-15",
-    excerpt: "Observations from my time walking the floor of a maritime procurement warehouse.",
-    tags: ["Warehouse", "Observations"],
-    content: `
-During my internship, I spent a significant amount of time on the warehouse floor. It's one thing to look at inventory levels on a spreadsheet; it's completely different to see the physical constraints of moving pallets and managing dock schedules.
-
-One key observation: the optimal slotting strategy on paper often falls apart when you factor in human behavior. Pickers will find the path of least resistance, even if it contradicts the 'optimized' route.
-
-Any layout optimizer I build needs to account for this human element. It can't just be about shortest distance; it has to be about operational reality.
-    `
-  }
+    id: "supply-chain-resilience",
+    title: "What do we mean by resilience in supply chain?",
+    date: "29 July 2026",
+    tags: ["Resilience", "Risk Management"],
+    content: [
+      { type: "paragraph", text: "I recently studied A Supply Chain View of the Resilient Enterprise by Yossi Sheffi, a well-known author in this field. One line that stayed with me is: when everything is urgent, nothing is urgent. Sheffi's vulnerability map and framework help cut through that noise. They give a clear way to categorise which situations and scenarios deserve the most attention, and how to keep updating those maps as conditions change. That alone makes prioritisation more disciplined." },
+      { type: "paragraph", text: "Sheffi puts real weight on redundancy. Redundancy means keeping some resources in reserve so they can be used when a disruption hits. The extra cost of safety stock, additional suppliers or backup sites works like an insurance premium. If you want resilience, you should not shy away from that cost. At the same time he warns against throwing out the JIT system completely. The insurance has to be balanced against the risk of operational sluggishness and quality problems that too much buffer can create." },
+      { type: "paragraph", text: "Responsiveness is the next piece. Whether you operate in a competitive market full of customer choices or you already hold a market-leading position, you still need to respond quickly to supply-chain risks. That responsiveness can help you gain share or protect the lead you already have." },
+      { type: "paragraph", text: "Beyond redundancy sits flexibility, and this is where resilience starts to turn into advantage. Sheffi outlines five elements that create potential flexibility:" },
+      { type: "heading", text: "1. Supply and Procurement" },
+      { type: "paragraph", text: "The relationship with suppliers has to match the procurement strategy. If you work with a single supplier, the relationship needs to be deep and close. If you use multiple suppliers, the aim is to avoid becoming overly dependent on any one of them." },
+      { type: "heading", text: "2. Conversion" },
+      { type: "paragraph", text: "This measures how well a company can respond when one of its own manufacturing sites is disrupted. Standard processes and multiple locations that can work interchangeably make rapid recovery possible." },
+      { type: "heading", text: "3. Distribution and customer-facing activities" },
+      { type: "paragraph", text: "There needs to be a clear process for setting priorities in the critical period right after a disruption. Some companies are also able to influence demand for their products, which softens the impact." },
+      { type: "heading", text: "4. Control Systems" },
+      { type: "paragraph", text: "Good control systems detect a disruption early and support fast recovery actions." },
+      { type: "heading", text: "5. Right Culture" },
+      { type: "paragraph", text: "Situational awareness and initiative have to exist at the levels closest to the event, not only at headquarters. One of the core tenets of resilience is giving front-line people the authority to act on the facts in front of them." },
+      { type: "paragraph", text: "Taken together, these elements show that resilience is not a single capability. It sits in the combination of being responsive when disruption hits, carrying the right amount of redundancy, and building real flexibility across the chain. When those three work together, a company does more than survive. It often finds the chance to gain significant momentum." },
+    ],
+  },
+  {
+    id: "triple-a-supply-chain",
+    title: "Is an efficient supply chain not worth it? A Triple-A supply chain deep dive",
+    date: "18 August 2026",
+    tags: ["Triple-A", "Efficiency"],
+    content: [
+      { type: "paragraph", text: "I recently read Hau Lee's article on the Triple-A Supply Chain. It left me with a slightly uncomfortable question. For years most of us have been taught that an efficient supply chain is the goal. Lower costs, tighter inventories, faster turns. But Lee's piece makes you wonder whether pure efficiency is actually enough, or whether it can quietly become a trap." },
+      { type: "paragraph", text: "Lee argues that a supply chain focused only on cost or speed will eventually hit a wall. To stay ahead it needs three things working together: Agility, Adaptability and Alignment." },
+      { type: "paragraph", text: "Agility is the ability to react fast to short-term changes. A sudden spike in demand, a supplier delay, a promotion that takes off overnight. Companies that have real agility can move inventory, switch production or reroute shipments without the whole system freezing. Seven-Eleven Japan is still the classic example. Their stores receive multiple deliveries every day and the system constantly adjusts what goes where based on real-time sales. That is agility in practice." },
+      { type: "paragraph", text: "Adaptability is different. It is about changing the design of the supply chain itself when the market structure shifts. Not just responding to today's order, but redesigning for tomorrow's reality. Lee points out that many companies stay locked into the same suppliers, same plant locations and same distribution model long after customer preferences or technology have moved on. The ones that adapt early gain years of advantage. You can see this in how some apparel brands completely reworked their production footprints when near-shoring became necessary, or how certain electronics companies shifted capacity across countries when trade patterns changed." },
+      { type: "paragraph", text: "Alignment is the quietest of the three, yet maybe the most important. It means making sure every partner in the chain has incentives that point in the same direction. If the manufacturer wants high volume, the retailer wants low inventory, and the logistics provider is paid only on utilisation, the system starts fighting itself. Lee shows that the best supply chains deliberately design contracts, information sharing and performance metrics so that when one party wins the others do not lose. Without alignment, both agility and adaptability stay limited because no one fully cooperates." },
+      { type: "paragraph", text: "What struck me is how these three reinforce each other. You can be agile in the short term, but if the chain is not adaptable that agility eventually runs out of options. And without alignment, neither of the first two works at scale because partners begin protecting their own interests." },
+      { type: "paragraph", text: "This also connects back to the resilience ideas I was reading earlier. Redundancy and flexibility help, but if the whole chain is not aligned around the same goals, the extra capacity just sits unused or gets argued over. Pure efficiency can look good on paper until the first real disruption hits. Lee's framework gives a clearer way to think about where the real leverage sits." },
+      { type: "paragraph", text: "I am still turning this over in my mind. The companies that treat Triple-A as an ongoing practice rather than a one-time project seem to handle disruption better and also capture upside faster when conditions change. Efficiency still matters, of course. But on its own it may no longer be enough." },
+    ],
+  },
+  {
+    id: "product-lifecycle-supply-chain",
+    title: "Why the lifecycle stage of your product matters most for your supply chain",
+    date: "5 September 2026",
+    tags: ["Product Lifecycle", "Inventory"],
+    content: [
+      { type: "paragraph", text: "Whether you face stockouts or overstocking, whether price promotions become necessary, or how well supply chain partners coordinate, depends far more on the stage your product is in than on the technology you use." },
+      { type: "paragraph", text: "There are five distinct stages in the product lifecycle: introduction, growth, maturity, decline and exit. Different authors offer different strategies for each. Fisher talks about innovative versus functional products and the matching choice between responsive and efficient supply chains. Van Hoek focuses on postponement. Even recent cases, such as how Amazon has evolved its fulfilment centres, show the same underlying logic playing out across these stages." },
+      { type: "paragraph", text: "According to Fisher, innovative products typically sit in the introduction stage. Functional products sit in maturity. That distinction drives very different supply chain decisions." },
+      { type: "paragraph", text: "For innovative products, demand is uncertain. The critical choices about inventory and capacity are not about minimising cost. They are about where in the chain to position inventory and production capacity so you can hedge against that uncertainty. Suppliers should be chosen for speed and flexibility, not for the lowest price." },
+      { type: "paragraph", text: "For functional products, demand is more stable. The important flow of information is the one that moves inside the chain as suppliers, manufacturers and retailers coordinate to meet predictable demand at the lowest cost. Continuous replenishment becomes essential." },
+      { type: "paragraph", text: "The split between innovative and functional is not absolute. It also depends on the mix — how much of your portfolio is truly innovative versus functional. That mix should shape the overall design of the supply chain. Fisher also notes that products can shift from functional to innovative or the other way around. When that happens, the usual reactions — cutting inventory, pushing the sales team harder, or forcing Just-In-Time — are often the wrong moves. You need to reclassify the product and adjust the supply chain to match." },
+      { type: "paragraph", text: "The most common mismatch, he says, occurs when companies put an innovative product into an efficient supply chain (or a functional product into a responsive one). The correction is to move the product into the right quadrant: innovative products need responsive supply chains; functional products need efficient ones." },
+      { type: "paragraph", text: "Fisher's thinking does not stop at matching product type to supply chain. In a later HBR piece with Ramnath Vaidyanathan, he asks a more practical question: which products should you actually stock? Simply dropping low-selling items that are in decline is often a mistake, because those products may still matter to certain customers. Instead, he suggests using the attributes of existing products to predict demand for both new (introduction-stage) and declining items. For a television, attributes might include screen size, resolution, price, LCD versus plasma, and brand. This approach works better for relatively stable “hard” products than for items that change constantly. The key is to analyse sales and forecasts across the product mix by attribute, and then assort products according to what matters most in each locality." },
+      { type: "paragraph", text: "Taken together, the message is straightforward. The lifecycle stage of the product sets the real constraints and opportunities for the supply chain. Get the stage right, match the supply chain type to it, and keep adjusting as the product moves, and many of the usual inventory and coordination problems become much easier to manage." },
+    ],
+  },
+  {
+    id: "ai-supply-chain-planners",
+    title: "I expected to find stories about AI replacing supply chain planners. Instead, I found something much more interesting.",
+    date: "21 September 2026",
+    tags: ["Artificial Intelligence", "Planning"],
+    content: [
+      { type: "paragraph", text: "Over the past few days, I went through dozens of discussions from supply chain professionals across different industries to understand where AI is actually creating value. The more I read, the clearer one pattern became." },
+      { type: "emphasis", text: "AI is definitely being adopted in supply chains, but not in the way LinkedIn headlines or software vendors often suggest." },
+      { type: "paragraph", text: "The biggest success stories weren't about autonomous planning or AI running an entire supply chain. They were about solving everyday problems that quietly consume hours of a planner's time." },
+      { type: "list", items: ["Drafting emails, SOPs, and reports", "Searching ERP data using natural language", "Summarizing supplier communications", "Processing orders and documentation", "Supporting warehouse operations", "Using computer vision to improve workplace safety"] },
+      { type: "paragraph", text: "None of these replace planners. They simply remove friction from their day." },
+      { type: "paragraph", text: "What surprised me even more was what wasn't working. Across industries, practitioners kept coming back to the same challenge: data quality." },
+      { type: "paragraph", text: "If inventory records are inaccurate, supplier lead times are outdated, or master data has been neglected for years, AI doesn't solve the problem. It simply produces faster answers from flawed information." },
+      { type: "paragraph", text: "Another observation caught my attention." },
+      { type: "paragraph", text: "Despite all the excitement around AI, I found very few practitioners claiming that it had dramatically improved demand forecasting or inventory optimization at scale. Most successful implementations focused on something much less glamorous like reducing repetitive work, making information easier to find, and helping people make decisions faster." },
+      { type: "paragraph", text: "That completely changed how I think about supply chain AI." },
+      { type: "quote", text: "Instead of asking: “How can AI replace planners?”" },
+      { type: "quote", text: "I'm starting to think the better question is: “What's the most frustrating part of a planner's day that AI can eliminate?”" },
+      { type: "paragraph", text: "To me, that's where the biggest near-term opportunity lies — not replacing expertise, but amplifying it." },
+      { type: "closing", text: "Sometimes, the biggest transformation doesn't come from replacing people. It comes from giving them back an hour of their day." },
+    ],
+  },
 ];
+
+blogPosts.forEach((post) => {
+  post.searchText = post.content
+    .flatMap((block) => block.items ?? [block.label, block.text])
+    .filter(Boolean)
+    .join(" ");
+});

@@ -12,3 +12,4 @@
 - [x] Add DSCL logo and browser icon
 - [x] Stabilize fonts by bundling them with the site
 - [x] Diagnose custom domain availability
+- [ ] Replace placeholder blog posts with the five authored articles and publication dates
