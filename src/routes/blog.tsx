@@ -1,6 +1,7 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/blog")({
+  staticData: { sitemap: false },
   head: () => ({
     meta: [
       { title: "Blog | Digital Supply Chain Lab" },

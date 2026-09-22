@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import Resume from "@/pages/Resume.jsx";
 
 export const Route = createFileRoute("/resume")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Resume | Shubham Gambhire" },
