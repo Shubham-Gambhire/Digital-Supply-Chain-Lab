@@ -60,7 +60,7 @@ const Projects = () => {
           </div>
         ) : (
           <div className="empty-state">
-            <h3>No projects found</h3>
+            <h2>No projects found</h2>
             <p>Try a different area or search term.</p>
             <button className="button-secondary" onClick={() => { setActiveTab('All'); setSearchTerm(''); }}>
               Clear

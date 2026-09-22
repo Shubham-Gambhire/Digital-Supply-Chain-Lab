@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Link to={`/projects/${project.id}`} className="project-card">
       <div className="project-card-header">
-        <h3 className="project-card-title">{project.title}</h3>
+        <h2 className="project-card-title">{project.title}</h2>
         <ScorTag function={project.scor} />
       </div>
       
