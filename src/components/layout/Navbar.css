@@ -28,7 +28,21 @@
 .navbar-logo {
   font-weight: 600;
   font-size: 1.1rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: var(--radius-sm);
 }
 
 .navbar-links {
@@ -126,7 +140,23 @@
   }
 
   .navbar-logo a {
-    display: block;
+    display: flex;
+  }
+
+  .navbar-brand {
+    gap: var(--space-2);
+  }
+
+  .navbar-brand img {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .navbar-brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .navbar-mobile-controls {
