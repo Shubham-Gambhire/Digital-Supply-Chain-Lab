@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Digital Supply Chain Lab — Shubham Gambhire" },
+      { title: "Digital Supply Chain Lab | Shubham Gambhire" },
       {
         name: "description",
         content:
           "A public lab notebook for digital supply chains: prototypes, decisions, and lessons at the intersection of supply chain strategy and technology.",
       },
       { name: "author", content: "Shubham Gambhire" },
-      { property: "og:title", content: "Digital Supply Chain Lab — Shubham Gambhire" },
+      { property: "og:title", content: "Digital Supply Chain Lab | Shubham Gambhire" },
       {
         property: "og:description",
         content:

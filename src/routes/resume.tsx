@@ -4,13 +4,13 @@ import Resume from "@/pages/Resume.jsx";
 export const Route = createFileRoute("/resume")({
   head: () => ({
     meta: [
-      { title: "Resume — Shubham Gambhire" },
+      { title: "Resume | Shubham Gambhire" },
       {
         name: "description",
         content:
           "Resume of Shubham Gambhire: supply chain operations, analytics, and digital tool building.",
       },
-      { property: "og:title", content: "Resume — Shubham Gambhire" },
+      { property: "og:title", content: "Resume | Shubham Gambhire" },
       {
         property: "og:description",
         content:
