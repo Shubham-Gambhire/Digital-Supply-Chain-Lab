@@ -4,6 +4,7 @@
 
 - Add Tarion as a new **SOURCE** project, reflecting its trade strategy and sourcing-decision focus.
 - Present the Kearney case competition achievement clearly: Top 12 national finalist.
+- Use the supplied certificate only to verify Shubham Gambhire's recognition. Do not attach or reproduce it, and do not publish any other names shown in it.
 - Use the three supplied screenshots in the existing expandable project gallery.
 - Keep the public demo inside the Digital Supply Chain Lab project path, so visitors launch it through `/projects/tarion/demo` and never see the raw hosting URL in site copy.
 - Convert the supplied development report into a professionally formatted PDF credited to Shubham Gambhire, with Digital Supply Chain Lab contact details and no em dashes.

@@ -16,3 +16,4 @@
 - [x] Give each blog article its own page and show only the newest article on the homepage
 - [ ] Add the Tarion project under SOURCE with an embedded demo and supplied screenshots
 - [ ] Create and attach a polished Tarion development report PDF without em dashes
+- [ ] Verify Tarion recognition from the certificate without publishing the certificate or any other participant names
