@@ -62,6 +62,9 @@ const ProjectDetail = () => {
             <span key={tech} className="tech-pill-detail font-mono">{tech}</span>
           ))}
         </div>
+        {project.recognition && (
+          <p className="project-recognition">{project.recognition}</p>
+        )}
       </header>
 
       <section className="project-section">
@@ -149,8 +152,8 @@ const ProjectDetail = () => {
           </a>
         )}
         {project.downloadUrl && (
-          <a href={project.downloadUrl} className="button-secondary" download>
-            Download Windows Executable
+          <a href={project.downloadUrl} className="button-secondary" target="_blank" rel="noopener noreferrer">
+            {project.downloadLabel || "Download Project"}
           </a>
         )}
       </footer>

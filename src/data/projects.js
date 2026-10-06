@@ -1,4 +1,57 @@
+import tarionOverview from '../assets/tarion-portfolio-overview.png.asset.json';
+import tarionSimulation from '../assets/tarion-simulation-controls.png.asset.json';
+import tarionRecommendation from '../assets/tarion-simulation-recommendation.png.asset.json';
+import tarionReport from '../assets/tarion-project-report.pdf.asset.json';
+
 export const projects = [
+  {
+    id: "tarion-trade-copilot",
+    title: "Tarion",
+    tagline: "AI trade strategy copilot for tariff, duty, and sourcing decisions",
+    status: "Live Project",
+    scor: "SOURCE",
+    technologies: ["Python", "FastAPI", "JavaScript", "Operations Research", "AI"],
+    industries: ["Trade", "Sourcing", "Procurement"],
+    featured: true,
+    recognition: "Top 12 National Finalist, KOSMIC 2026",
+    businessProblem: "International sourcing teams need to respond to tariff shocks without reducing a complex trade decision to duty rate alone. Tarion evaluates viable countries of origin across landed cost, regulatory constraints, risk, resilience, and implementation feasibility while keeping every assumption and rejected option visible.",
+    decisionExplored: "Which sourcing origin should be selected for each product when tariff exposure, landed cost, supplier readiness, resilience, and hard trade rules are evaluated together?",
+    approach: {
+      businessLogic: "Tarion applies a 21-step landed-cost build-up, thirteen threshold-based rules, six risk factors, and a four-pillar ranking model. It normalises EXW, FOB, CIF, and DDP quotes, compares US and India duty regimes, and preserves blocked or vetoed options with their arithmetic so the recommendation remains auditable.",
+      technicalImplementation: "A deterministic Python engine performs every calculation, a FastAPI layer transports results, and a lightweight JavaScript interface presents the evidence. Regulatory updates pass through a human approval gate. The AI layer is restricted to narration and verifies every returned number against engine output before showing it."
+    },
+    prototype: {
+      screenshots: [
+        {
+          src: tarionOverview.url,
+          alt: "Tarion portfolio overview with spend, tariff exposure, identified savings, and ranked opportunities",
+          caption: "Portfolio overview with spend, tariff exposure, identified savings, concentration, and ranked opportunities."
+        },
+        {
+          src: tarionSimulation.url,
+          alt: "Tarion scenario simulation controls",
+          caption: "Scenario controls for lane, incoterm, price, freight, duty, capital cost, volume, and ranking assumptions."
+        },
+        {
+          src: tarionRecommendation.url,
+          alt: "Tarion recommendation evidence beneath the simulation controls",
+          caption: "Recommendation evidence showing the decision output beneath the simulation controls."
+        }
+      ],
+      videos: []
+    },
+    tradeoffs: "The demonstration portfolio is synthetic, although its tariff rates, HTS codes, and fee constants use published sources. Some India rates remain secondary-source verified, and lane assumptions are calibrated primarily for US-bound movements. These limits are disclosed rather than hidden behind the recommendation.",
+    futureWork: [
+      "Validate supplier capacity, MOQ, and qualification inputs with live commercial data.",
+      "Complete primary-source verification for remaining India rates and preferences.",
+      "Calibrate freight, transit, and compliance assumptions for additional destination markets.",
+      "Pilot the workflow with sourcing teams and measure decision quality and adoption."
+    ],
+    githubUrl: null,
+    downloadUrl: tarionReport.url,
+    downloadLabel: "Read Project Report",
+    demoUrl: "https://tarion-xi.vercel.app/"
+  },
   {
     id: "facility-design-engine",
     title: "Facility Design Engine",

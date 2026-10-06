@@ -39,6 +39,17 @@
   align-items: center;
 }
 
+.project-recognition {
+  display: inline-flex;
+  margin: var(--space-4) 0 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--accent);
+  background-color: var(--accent-subtle);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .tech-pill-detail {
   font-size: 0.8rem;
   color: var(--text-secondary);
