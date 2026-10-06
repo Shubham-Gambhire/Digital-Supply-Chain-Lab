@@ -13,6 +13,7 @@ export type Project = {
   technologies: string[];
   industries: string[];
   featured: boolean;
+  recognition?: string;
   businessProblem: string;
   decisionExplored: string;
   approach: { businessLogic: string; technicalImplementation: string };
@@ -21,6 +22,7 @@ export type Project = {
   futureWork: string[];
   githubUrl: string | null;
   downloadUrl: string | null;
+  downloadLabel?: string;
   demoUrl: string | null;
 };
 
