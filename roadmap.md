@@ -14,3 +14,5 @@
 - [x] Diagnose custom domain availability
 - [x] Replace placeholder blog posts with the five authored articles and publication dates
 - [x] Give each blog article its own page and show only the newest article on the homepage
+- [ ] Add the Tarion project under SOURCE with an embedded demo and supplied screenshots
+- [ ] Create and attach a polished Tarion development report PDF without em dashes
